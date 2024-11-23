@@ -54,7 +54,7 @@ class BestSellerListViewItem extends StatelessWidget {
                 Text(
                   'J.K.Rowling',
                   style: Styles.textStyle14.copyWith(
-                    color: Color(0xff707070),
+                    color: Colors.white.withOpacity(0.7),
                   ),
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,

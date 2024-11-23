@@ -32,7 +32,9 @@ class BookDetailsViewBody extends StatelessWidget {
         Text(
           'Rudyard Kipling',
           style: Styles.textStyle18.copyWith(
-            color: Color(0xff707070),
+            color: Colors.white.withOpacity(0.7),
+            fontStyle: FontStyle.italic,
+            fontWeight: FontWeight.w500,
           ),
         )
       ],
