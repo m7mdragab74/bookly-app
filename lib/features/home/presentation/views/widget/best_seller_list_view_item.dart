@@ -49,7 +49,7 @@ class BestSellerListViewItem extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  height: MediaQuery.of(context).size.height * 1 / 247,
+                  height: MediaQuery.of(context).size.height * 1 / 279,
                 ),
                 Text(
                   'J.K.Rowling',
@@ -60,7 +60,7 @@ class BestSellerListViewItem extends StatelessWidget {
                   overflow: TextOverflow.ellipsis,
                 ),
                 SizedBox(
-                  height: MediaQuery.of(context).size.height * 1 / 247,
+                  height: MediaQuery.of(context).size.height * 1 / 249,
                 ),
                 Row(
                   children: [
