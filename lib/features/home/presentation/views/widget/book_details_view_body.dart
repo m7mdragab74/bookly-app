@@ -3,6 +3,7 @@ import 'package:bookly_app/features/home/presentation/views/widget/book_rating.d
 import 'package:bookly_app/features/home/presentation/views/widget/books_action.dart';
 import 'package:bookly_app/features/home/presentation/views/widget/custom_book_details_app_bar.dart';
 import 'package:bookly_app/features/home/presentation/views/widget/custom_book_image.dart';
+import 'package:bookly_app/features/home/presentation/views/widget/simiar_books_list_view.dart';
 import 'package:flutter/material.dart';
 
 class BookDetailsViewBody extends StatelessWidget {
@@ -25,7 +26,7 @@ class BookDetailsViewBody extends StatelessWidget {
           child: CustomBookImage(),
         ),
         SizedBox(
-          height: MediaQuery.of(context).size.height * 0.05,
+          height: MediaQuery.of(context).size.height * 0.04,
         ),
         Text(
           'The Jungle Book',
@@ -49,11 +50,33 @@ class BookDetailsViewBody extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
         ),
         SizedBox(
+          height: MediaQuery.of(context).size.height * 0.04,
+        ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 38),
+          child: BooksAction(),
+        ),
+        SizedBox(
           height: MediaQuery.of(context).size.height * 0.05,
         ),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 30),
-          child: BooksAction(),
+          child: Align(
+            alignment: Alignment.centerLeft,
+            child: Text(
+              'You can also like',
+              style: Styles.textStyle14.copyWith(
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          ),
+        ),
+        SizedBox(
+          height: MediaQuery.of(context).size.height * 0.02,
+        ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 30),
+          child: SimilarBookListView(),
         ),
       ],
     );

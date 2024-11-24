@@ -8,11 +8,13 @@ class CustomBottom extends StatelessWidget {
     required this.text,
     required this.backgroundColor,
     this.borderRadius,
+    this.fontSize,
   });
   final Color textColor;
   final String text;
   final Color backgroundColor;
   final BorderRadius? borderRadius;
+  final double? fontSize;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -30,6 +32,7 @@ class CustomBottom extends StatelessWidget {
           style: Styles.textStyle20.copyWith(
             fontWeight: FontWeight.bold,
             color: textColor,
+            fontSize: fontSize,
           ),
         ),
       ),
