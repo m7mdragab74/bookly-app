@@ -21,7 +21,7 @@ class SearchViewBody extends StatelessWidget {
             height: MediaQuery.of(context).size.height * 0.04,
           ),
           const Text(
-            'Result',
+            'Search Result',
             style: Styles.textStyle18,
           ),
           SizedBox(
