@@ -20,7 +20,9 @@ class NewsBookListView extends StatelessWidget {
             itemBuilder: (context, index) {
               return Padding(
                 padding: const EdgeInsets.symmetric(vertical: 10),
-                child: BookListViewItem(),
+                child: BookListViewItem(
+                  bookModel: state.books[index],
+                ),
               );
             },
           );

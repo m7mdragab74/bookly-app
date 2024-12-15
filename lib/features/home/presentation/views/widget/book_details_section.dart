@@ -40,6 +40,8 @@ class BookDetailsSection extends StatelessWidget {
           height: MediaQuery.of(context).size.height * 0.02,
         ),
         BookRating(
+          rating: 0,
+          count: 8,
           mainAxisAlignment: MainAxisAlignment.center,
         ),
         SizedBox(
