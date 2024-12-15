@@ -21,7 +21,7 @@ class BookListViewItem extends StatelessWidget {
         child: Row(
           children: [
             CustomBookImage(
-              imageUrl: bookModel.volumeInfo.imageLinks.thumbnail,
+              imageUrl: bookModel.volumeInfo.imageLinks?.thumbnail ?? '',
             ),
             SizedBox(
               width: MediaQuery.of(context).size.width * 1 / 13,
@@ -65,7 +65,7 @@ class BookListViewItem extends StatelessWidget {
                       width: MediaQuery.of(context).size.width * 1 / 12,
                     ),
                     BookRating(
-                      rating: bookModel.volumeInfo.averageRating ?? 0,
+                      rating: bookModel.volumeInfo.averageRating?.round() ?? 0,
                       count: bookModel.volumeInfo.ratingCount ?? 0,
                     ),
                   ],
