@@ -9,12 +9,14 @@ class CustomBottom extends StatelessWidget {
     required this.backgroundColor,
     this.borderRadius,
     this.fontSize,
+    this.onPressed,
   });
   final Color textColor;
   final String text;
   final Color backgroundColor;
   final BorderRadius? borderRadius;
   final double? fontSize;
+  final void Function()? onPressed;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -26,7 +28,7 @@ class CustomBottom extends StatelessWidget {
             borderRadius: borderRadius ?? BorderRadius.circular(16),
           ),
         ),
-        onPressed: () {},
+        onPressed: onPressed,
         child: Text(
           text,
           style: Styles.textStyle20.copyWith(
